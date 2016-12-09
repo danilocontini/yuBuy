@@ -28,11 +28,14 @@
             top: 50
         }
     });
-    $('#mainNav').on('gbs.affix', function(){
+    $('#mainNav').on('affix.bs.affix', function(){
 	    $('.logo').attr('src','img/yubuy.svg');
     });
     $('#mainNav').on('affix-top.bs.affix', function(){
 	    $('.logo').attr('src','img/yubuyWhite.svg');
     });
+	$('#countdown').countdown('2017/03/30', function(event) {
+		$(this).html(event.strftime('<span class="weeks">%w</span> <span class="weeks-txt">semanas</span> <span class="days">%d</span> <span class="days-txt">dias</span> <span class="hours">%H:%M:%S</span>'));
+	});
 
 }(jQuery)); // End of use strict

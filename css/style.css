@@ -89,6 +89,12 @@ p {
   color: #222222;
   padding: 8px 10px;
 }
+.navbar-default .vertical-center {
+  vertical-align: middle;
+}
+.navbar-default .nav {
+  margin: 18px 0;
+}
 .navbar-default .nav > li > a {
   font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
   text-transform: uppercase;
@@ -166,6 +172,23 @@ header {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
 }
+header .countdown {
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+header .countdown p {
+  font-size: 1.6em;
+  margin: 0;
+}
 header .header-content {
   text-align: center;
   padding: 150px 0 50px;
@@ -187,6 +210,9 @@ header .header-content .header-content-inner .list-badges {
 header .header-content .header-content-inner .list-badges img {
   height: 50px;
   margin-bottom: 25px;
+}
+header .header-content .header-content-inner .btn {
+  margin-top: 30px;
 }
 header .device-container {
   max-width: 300px;
@@ -375,6 +401,12 @@ section.contact ul.list-social li.social-google-plus a {
 }
 section.contact ul.list-social li.social-google-plus a:hover {
   background-color: #d73925;
+}
+section.contact ul.list-social li.email a {
+  background-color: #777777;
+}
+section.contact ul.list-social li.email a:hover {
+  background-color: #6a6a6a;
 }
 footer {
   background-color: #222222;

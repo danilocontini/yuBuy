@@ -73,7 +73,13 @@ p {
         color: @gray-darker;
         padding: 8px 10px;
     }
+	.vertical-center {
+		//display: flex;
+		//align-items: center;
+		vertical-align: middle;
+	}
     .nav {
+	    margin: 18px 0;
         > li {
             > a {
                 .alt-font;
@@ -149,6 +155,18 @@ header {
     background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, @theme-secondary , @theme-tertiary); /* Chrome 10-25, Safari 5.1-6 */
     background: url("../img/bg-pattern.png"), linear-gradient(to left, @theme-secondary , @theme-tertiary); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: white;
+	.countdown {
+		.border-radius(7px);
+		width: 500px;
+		text-align: center;
+		margin: 0 auto;
+		padding: 25px;
+		background-color: rgba(0,0,0,0.5);
+		p {
+			font-size: 1.6em;
+			margin: 0;
+		}
+	}
     .header-content {
         text-align: center;
         padding: 150px 0 50px;
@@ -169,6 +187,9 @@ header {
                     margin-bottom: 25px;
                 }
             }
+	        .btn {
+		        margin-top: 30px;
+	        }
         }
     }
     .device-container {
@@ -367,6 +388,14 @@ section.contact {
                     }
                 }
             }
+	        &.email {
+		        a {
+			        background-color: @gray-light;
+			        &:hover {
+				        background-color: darken(@gray-light, 5%);
+			        }
+		        }
+	        }
         }
     }
 }
